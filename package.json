@@ -48,7 +48,7 @@
     "sinon": "^2.0.0",
     "source-map-support": "^0.4.6",
     "supertest": "^3.0.0",
-    "tslint": "^5.0.0",
+    "tslint": "^5.3.0",
     "typescript": "^2.1.1"
   },
   "dependencies": {
