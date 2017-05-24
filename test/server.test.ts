@@ -49,8 +49,8 @@ describe("Unit Test: InversifyExpressServer", () => {
         let serverWithDefaultRouter = new InversifyExpressServer(container);
         let serverWithCustomRouter = new InversifyExpressServer(container, customRouter);
 
-        expect((serverWithDefaultRouter as any)._router === customRouter).to.be.false;
-        expect((serverWithCustomRouter as any)._router === customRouter).to.be.true;
+        expect((serverWithDefaultRouter as any)._inversifyRouter._router === customRouter).to.be.false;
+        expect((serverWithCustomRouter as any)._inversifyRouter._router === customRouter).to.be.true;
 
     });
 
